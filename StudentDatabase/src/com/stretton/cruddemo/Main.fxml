@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stretton.cruddemo.MainController">
+   <children>
+      <VBox layoutX="80.0" layoutY="47.0">
+         <children>
+            <HBox prefHeight="298.0" prefWidth="328.0" spacing="15.0">
+               <children>
+                  <VBox prefHeight="386.0" prefWidth="105.0" spacing="15.0">
+                     <children>
+                        <Label text="Student ID">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="First Name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Surname">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Year of Study">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Gender">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Email">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Contact">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="386.0" prefWidth="208.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="tfStudentID" />
+                        <TextField fx:id="tfFirstName" />
+                        <TextField fx:id="tfSurname" />
+                        <TextField fx:id="tfYearOfStudy" />
+                        <TextField fx:id="tfGender" />
+                        <TextField fx:id="tfEmail" />
+                        <TextField fx:id="tfContact" />
+                        <TextField fx:id="tfAddress" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#insertStudents" prefWidth="100.0" text="Insert" />
+                  <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#showStudents" prefWidth="100.0" text="Update" />
+                  <Button fx:id="btnDelete" mnemonicParsing="false" prefWidth="100.0" text="Delete" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tvStudents" layoutX="470.0" layoutY="47.0" prefHeight="513.0" prefWidth="802.0">
+        <columns>
+          <TableColumn fx:id="colStudentID" prefWidth="100.0" text="Student ID" />
+            <TableColumn fx:id="colFirstName" prefWidth="100.0" text="First Name" />
+            <TableColumn fx:id="colSurname" prefWidth="100.0" text="Surname" />
+          <TableColumn fx:id="colYearOfStudy" prefWidth="100.0" text="Year of Study" />
+            <TableColumn fx:id="colGender" prefWidth="100.0" text="Gender" />
+            <TableColumn fx:id="colEmail" prefWidth="100.0" text="Email" />
+            <TableColumn fx:id="colContact" prefWidth="100.0" text="Contact " />
+            <TableColumn fx:id="colAddress" prefWidth="100.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
